@@ -4,8 +4,9 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={{ color:'red'}}>Open up App.js to start working on your app!</Text>
-      <Text style={[styles.texto, {color:'blue'}]}>Estilização de linha por grupo ( StyleSheet)</Text>
+        <Text style={[styles.numero, {color:'black'}]}>21</Text>
+      <Text style={{ backgroundColor:'pink'}}>I2HN</Text>
+      <Text style={[styles.texto, {color:'blue'}]}>João Pedro Araújo Teixeira</Text>
     </View>
   );
 }
@@ -18,6 +19,20 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   texto: {
-   fontSize: 32, 
+   fontSize: 30, 
+   fontWeight: 'bold',
+   alignItems: 'center',
+   justifyContent: 'center',
+   left: '30%',
   },
+  numero: {
+    fontSize: 25, 
+    fontStyle: 'italic',
+    alignItems: 'center',
+    justifyContent: 'center',
+    right: '30%',
+    borderBottomColor: 'black',
+    borderBottomWidth: 2,
+    marginBottom: 30,
+   },
 });
