@@ -5,7 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
         <Text style={[styles.numero, {color:'black'}]}>21</Text>
-      <Text style={{ backgroundColor:'pink'}}>I2HN</Text>
+      <Text style={[styles.sala, {backgroundColor:'pink'}]}>I2HN</Text>
       <Text style={[styles.texto, {color:'blue'}]}>João Pedro Araújo Teixeira</Text>
     </View>
   );
@@ -35,4 +35,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2,
     marginBottom: 30,
    },
+   sala:{
+   fontSize: 20,
+   }
 });
